@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+nav {
+  background-color: brown;
+  padding-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+nav ul li a.active {
+  /* color: #dddddd; */
+  transition: 0.2s;
+  color: rgb(117, 114, 114);
+  text-decoration: 2px solid underline;
+  text-underline-offset: 5px;
+  /* text-decoration-thickness: 1px; */
+}
+
+.product_card_item {
+  display: grid;
+  grid-template-columns: repeat(4, calc(100% / 4 - 25px));
+  gap: 30px;
+  margin-top: 60px;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.product_card {
+  width: 280px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 10px gray;
+}
+
+.img_in_card {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.img_in_card figure {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.img_in_card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.second_part_in_card {
+  padding: 15px 30px;
+}
+
+.header_card {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.describtion_in_product_card {
+  padding-top: 13px;
+  font-size: 13px;
+  line-height: 23px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 100;
+}
+
+.salary_in_product_card {
+  padding-top: 20px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.button_in_product_card button {
+  /* height: 100px; */
+  display: flex;
+  background: #e34235;
+  align-items: end;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.button_in_product_card {
+  padding: 10px 30px 30px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 100px;
+  /* padding-bottom: 20px; */
+}
+
+form input {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: cornflowerblue;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.second_line {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+}
+
+.button_box_in_navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.border_div {
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+
+.range_box_in_navbar {
+  margin-left: 240px;
+}
