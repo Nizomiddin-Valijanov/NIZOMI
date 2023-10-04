@@ -107,7 +107,7 @@ export default function ReducerPage() {
           </div>
         );
       })}
-
+{/* salom olam */}
       <form onSubmit={(e) => dispatch({ type: "submit", payload: e })}>
         <Input
           type="text"
