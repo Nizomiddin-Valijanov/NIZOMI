@@ -5,4 +5,11 @@ let handlePlus = (param) => {
   };
 };
 
-export { handlePlus };
+let handleMinus = (param) => {
+  return {
+    type: "minus",
+    payload: param,
+  };
+};
+
+export { handlePlus, handleMinus };

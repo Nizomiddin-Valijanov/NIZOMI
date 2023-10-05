@@ -22,7 +22,10 @@ const ContactReducer = (state = data, { type, payload }) => {
         i.id === payload ? { ...i, count: i.count + 1 } : i
       );
       return state;
-
+    case "minus":
+      state = state.map((item) =>
+        item.id === payload ? { ...item, count: item.count - 1 } : item
+      );
     default:
       return state;
   }

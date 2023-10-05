@@ -174,3 +174,18 @@ form button {
 .range_box_in_navbar {
   margin-left: 240px;
 }
+
+.redux_main {
+  display: flex;
+  gap: 20px;
+  padding-top: 30px;
+  align-items: center;
+}
+
+.plus_minus_card {
+  flex-grow:  1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}

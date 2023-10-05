@@ -12,12 +12,12 @@ export default function ReducerPage() {
     switch (type) {
       case "plus":
         state = state.map((o) => {
-          return o.id === payload ? { ...o, num: o.num + 1 } : o;
+          return o.id === payload ? { ...o, num: +o.num + 1 } : o;
         });
         return state;
       case "minus":
         return state.map((m) => {
-          return m.id === payload ? { ...m, num: m.num - 1 } : m;
+          return m.id === payload ? { ...m, num: +m.num - 1 } : m;
         });
       case "submit":
         payload.preventDefault();
